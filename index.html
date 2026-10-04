@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - Organ Donor & Finder</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #b71c1c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: white;
+        }
+
+        .hero h2 {
+            color: #b71c1c;
+            font-size: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card h3 {
+            color: #b71c1c;
+        }
+
+        form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #b71c1c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>❤️ LifeLink</h1>
+
+        <p>Organ Donor & Finder</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#organs">Organs</a>
+            <a href="#donor">Become a Donor</a>
+            <a href="#finder">Find an Organ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <h2>Give the Gift of Life</h2>
+
+        <p>
+            Organ donation can give hope and a second chance
+            to people waiting for a transplant.
+        </p>
+
+        <p>
+            Learn about organ donation, register as a donor,
+            and explore our organ finder interface.
+        </p>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Organ Donation</h2>
+
+        <p>
+            Organ donation is the process of giving an organ
+            to help a person who needs a transplant.
+        </p>
+
+        <p>
+            One donor may be able to help multiple people.
+            Organ donation is an important way of helping
+            others and creating awareness.
+        </p>
+
+        <h3>Why Donate?</h3>
+
+        <ul>
+            <li>Help save lives</li>
+            <li>Give hope to patients</li>
+            <li>Support families</li>
+            <li>Create awareness</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Organs -->
+    <section id="organs">
+
+        <h2>Organs That Can Be Donated</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>❤️ Heart</h3>
+                <p>Helps patients with serious heart conditions.</p>
+            </div>
+
+            <div class="card">
+                <h3>🫘 Kidney</h3>
+                <p>Kidneys are among the most commonly transplanted organs.</p>
+            </div>
+
+            <div class="card">
+                <h3>🫁 Lungs</h3>
+                <p>Lung transplantation can help patients with severe lung disease.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧬 Liver</h3>
+                <p>Liver transplantation can help patients with liver failure.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Donor Registration -->
+    <section id="donor">
+
+        <h2>Become an Organ Donor</h2>
+
+        <form>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label for="blood">Blood Group</label>
+
+            <select id="blood">
+
+                <option>Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+
+            </select>
+
+            <label for="organ">Organ Willing to Donate</label>
+
+            <select id="organ">
+
+                <option>Select Organ</option>
+                <option>Kidney</option>
+                <option>Liver</option>
+                <option>Heart</option>
+                <option>Lungs</option>
+
+            </select>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+
+            <button type="submit">Register as Donor</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Finder -->
+    <section id="finder">
+
+        <h2>Find an Organ</h2>
+
+        <form>
+
+            <label for="required-organ">Required Organ</label>
+
+            <select id="required-organ">
+
+                <option>Select Organ</option>
+                <option>Kidney</option>
+                <option>Liver</option>
+                <option>Heart</option>
+                <option>Lungs</option>
+
+            </select>
+
+            <label for="required-blood">Blood Group</label>
+
+            <select id="required-blood">
+
+                <option>Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+
+            </select>
+
+            <label for="location">Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter city">
+
+            <button type="submit">Search</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: lifelink@example.com</p>
+
+        <p>Phone: +91 98765 43210</p>
+
+        <p>Location: Tamil Nadu, India</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 LifeLink - Organ Donation Awareness Project
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
